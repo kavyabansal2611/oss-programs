@@ -3,8 +3,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { ExternalLinkIcon, GithubIcon, FileCodeIcon, FilePlus } from "lucide-react";
 
 export default function SubmitPage() {
-    const repoIssuesUrl = "https://github.com/yourusername/oss-opportunities/issues/new/choose";
-    const repoTreeUrl = "https://github.com/yourusername/oss-opportunities/tree/main/data/programs";
+    const repoIssuesUrl = "https://github.com/OWASP-STUDENT-CHAPTER/oss-programs/issues/new/choose";
+    const repoTreeUrl = "https://github.com/OWASP-STUDENT-CHAPTER/oss-programs/tree/main/data/programs";
 
     return (
         <div className="container max-w-4xl mx-auto px-4 py-12 md:py-24 space-y-12">
@@ -68,7 +68,7 @@ export default function SubmitPage() {
 
             <div className="text-center pt-8 border-t">
                 <p className="text-muted-foreground text-sm">
-                    Please read our <a href="https://github.com/yourusername/oss-opportunities/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">Contributing Guidelines</a> before submitting a PR.
+                    Please read our <a href="https://github.com/OWASP-STUDENT-CHAPTER/oss-programs/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">Contributing Guidelines</a> before submitting a PR.
                 </p>
             </div>
         </div>
