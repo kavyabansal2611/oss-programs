@@ -35,13 +35,13 @@ export default function RootLayout({
                   Built by the community. Data maintained via YAML and GitHub.
                 </p>
                 <p className="text-[10px] text-muted-foreground/60 font-medium italic">
-                  Made by OWASP TIET team :)
+                  Made by <Link href="https://github.com/OWASP-STUDENT-CHAPTER" className="hover:text-primary transition-colors">OWASP TIET</Link> team :)
                 </p>
               </div>
             </div>
             <div className="flex gap-8 text-xs text-muted-foreground uppercase tracking-widest font-bold">
               <Link href="/about" className="hover:text-primary transition-colors">About</Link>
-              <Link href="https://github.com" className="hover:text-primary transition-colors">GitHub</Link>
+              <Link href="https://github.com/OWASP-STUDENT-CHAPTER/oss-programs" className="hover:text-primary transition-colors">GitHub</Link>
             </div>
           </div>
         </footer>
