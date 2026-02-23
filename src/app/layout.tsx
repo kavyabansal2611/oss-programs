@@ -35,7 +35,7 @@ export default function RootLayout({
                   Built by the community. Data maintained via YAML and GitHub.
                 </p>
                 <p className="text-[10px] text-muted-foreground/60 font-medium italic">
-                  Made by <Link href="https://github.com/OWASP-STUDENT-CHAPTER" className="hover:text-primary transition-colors">OWASP TIET</Link> team :)
+                  Made by <Link href="https://www.owasptiet.com/" className="hover:text-primary transition-colors">OWASP TIET</Link> team :)
                 </p>
               </div>
             </div>
