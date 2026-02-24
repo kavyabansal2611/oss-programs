@@ -16,7 +16,7 @@ We take the security of this project seriously. If you discover a security vulne
 
 Instead, please:
 
-1. Open a security advisory on GitHub using the [Security Advisories](https://github.com/OWASP-STUDENT-CHAPTER/oss-programs/security/advisories/new) feature
+1. Open a security advisory on GitHub using the [Security Advisories](https://github.com/OWASP-STUDENT-CHAPTER/oss-programs/security) feature
 2. Or email the maintainers directly with details about the vulnerability
 
 Please include:
