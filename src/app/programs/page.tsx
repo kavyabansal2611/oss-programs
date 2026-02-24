@@ -2,6 +2,46 @@ import { getPrograms } from "@/lib/programs";
 import { ProgramList } from "@/components/ProgramList";
 import { ListChecks } from "lucide-react";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "OSS Opportunities",
+    description:
+        "Browse open source programs including grants, fellowships, hackathons and internships. Discover OSS opportunities in one place.",
+
+    openGraph: {
+        title: "OSS Opportunities",
+        description:
+            "Explore open source opportunities such as GSoC, MLH Fellowship, Outreachy and more.",
+        url: "https://oss.owasptiet.com/programs",
+        siteName: "OSS Opportunities",
+        type: "website",
+    },
+
+    twitter: {
+        card: "summary_large_image",
+        title: "OSS Opportunities",
+        description:
+            "Find and explore the best open source programs worldwide.",
+    },
+
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1
+        }
+    },
+
+    alternates: {
+        canonical: "https://oss.owasptiet.com/programs",
+    },
+};
+
 export default function ProgramsPage() {
     const programs = getPrograms();
 

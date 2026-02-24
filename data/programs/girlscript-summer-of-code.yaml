@@ -14,8 +14,8 @@ stipend:
   amount_text: "Swag, T-shirts, Certificates & Prizes"
 remote: true
 links:
-  official: https://gssoc.girlscript.tech/
-  apply: https://gssoc.girlscript.tech/
+  official: https://gssoc.girlscript.org
+  apply: https://gssoc.girlscript.org/#apply
 dates:
   - year: 2026
     applications_open: 2026-05-01

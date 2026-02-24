@@ -3,9 +3,55 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CalendarIcon, ExternalLinkIcon, MapPinIcon, UsersIcon, CircleDot, Clock, XCircle, User, Globe, Briefcase, Banknote, Timer, TimerOff, CalendarRange, Info } from "lucide-react";
 
+import type { Metadata } from "next";
+
 import { notFound } from "next/navigation";
 import { LocalTime } from "@/components/LocalTime";
 import { cn } from "@/lib/utils";
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const program = getProgramBySlug(slug);
+
+    if (!program) {
+        return {
+            title: "Program Not Found"
+        };
+    }
+
+    return {
+        title: `${program.name} Open Source Program`,
+
+        description:
+            `${program.name} is an open source contribution program. Learn about eligibility, deadlines and start contributing to open source today.`,
+
+        openGraph: {
+            title: `${program.name} Open Source Program`,
+            description:
+                `Explore ${program.name} and kickstart your journey into open source development.`,
+            url: `https://oss.owasptiet.com/programs/${slug}`,
+            // images: [
+            //     {
+            //         url: program.logo || "/og.png",
+            //         width: 1200,
+            //         height: 630
+            //     }
+            // ]
+        },
+
+        twitter: {
+            card: "summary_large_image",
+            title: `${program.name} Open Source Program`,
+            description:
+                `Learn how to contribute to ${program.name}.`,
+            // images: [program.logo || "/og.png"]
+        },
+
+        alternates: {
+            canonical: `/programs/${slug}`
+        }
+    };
+}
 
 // Generate static params for static export
 export function generateStaticParams() {
