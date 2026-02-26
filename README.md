@@ -1,132 +1,264 @@
-```markdown
+<div align="center">
+
 # OSS Programs
 
-A curated, up-to-date directory of open source opportunities including mentorship programs, grants, fellowships, hackathons, and internships.
+### Your one-stop directory for open source opportunities
 
-![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat&logo=typescript)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat)
+A curated, community-maintained hub for **mentorship programs, grants, fellowships, hackathons, and internships** — with deadline tracking, stipend info, and calendar exports.
+
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=flat)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-ff6b6b?style=flat)](CONTRIBUTING.md)
+[![Built by OWASP](https://img.shields.io/badge/Built%20by-OWASP%20Student%20Chapter-003865?style=flat)](https://owasp.org/)
+
+[Live Site](#) · [Report a Bug](https://github.com/OWASP-STUDENT-CHAPTER/oss-programs/issues) · [Request a Program](https://github.com/OWASP-STUDENT-CHAPTER/oss-programs/issues/new)
+
+</div>
 
 ---
 
 ## Features
 
-* **Deadline Tracking:** Never miss an application deadline
-* **Search & Filter:** Find programs by category, stipend, eligibility, and more
-* **Calendar Export:** Export deadlines to your favorite calendar app
-* **Global Coverage:** Programs from around the world
-* **Stipend Info:** See compensation details at a glance
+| Feature | Description |
+|---|---|
+| **Deadline Tracking** | Never miss an application window |
+| **Search & Filter** | Filter by category, stipend, eligibility, and region |
+| **Calendar Export** | One-click export to Google, Apple, or Outlook Calendar |
+| **Global Coverage** | Programs from organizations worldwide |
+| **Stipend Info** | Compensation details visible at a glance |
+| **Fuzzy Search** | Fast, typo-tolerant search powered by Fuse.js |
 
-## Getting Started
-
-```bash
-# Clone the repository
-git clone [https://github.com/OWASP-STUDENT-CHAPTER/oss-programs.git](https://github.com/OWASP-STUDENT-CHAPTER/oss-programs.git)
-cd oss-programs
-
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-```
-
-Open `http://localhost:3000` to view the site.
+---
 
 ## Supported Programs
 
-* Google Summer of Code (GSoC)
-* Outreachy
-* MLH Fellowship
-* LFX Mentorship
-* Hacktoberfest
-* Mozilla Fellowship
-* NLnet NGI Zero
-* And more...
+| Program | Category | Stipend |
+|---|---|---|
+| Google Summer of Code (GSoC) | Mentorship | Paid |
+| Outreachy | Mentorship | Paid |
+| MLH Fellowship | Fellowship | Paid |
+| LFX Mentorship | Mentorship | Paid |
+| Hacktoberfest | Hackathon | Swag |
+| Mozilla Fellowship | Fellowship | Paid |
+| NLnet NGI Zero | Grant | Paid |
+| And more... | Various | Various |
+
+---
 
 ## Tech Stack
 
-* **Next.js 16** - React framework
-* **TypeScript** - Type safety
-* **Tailwind CSS** - Styling
-* **shadcn/ui** - UI components
-* **Fuse.js** - Fuzzy search
+```
+OSS Programs
+├── Framework     → Next.js 16
+├── Language      → TypeScript 5
+├── Styling       → Tailwind CSS
+├── UI Components → shadcn/ui
+└── Search        → Fuse.js (fuzzy search)
+```
 
 ---
 
-## OSS Documentation & Contribution Guide
+## Getting Started
 
-This directory is an actively maintained open-source project by the OWASP Student Chapter. We rely on community contributions to keep program deadlines, stipends, and links accurate and up to date.
+### Prerequisites
 
-We welcome contributions from developers, students, and open-source enthusiasts. Please review the guidelines below before submitting a Pull Request (PR).
+- Node.js `v18+`
+- npm `v9+`
 
-### Adding or Updating a Program
+### Installation
 
-If you are adding a new program or updating an existing one, ensure the information is verified against the program's official website. You will likely need to update the relevant data file (e.g., in the `/data` or `/content` directory).
-
-Please ensure your submission includes:
-
-* **Program Name**
-* **Category:** Mentorship, Grant, Hackathon, Fellowship
-* **Description:** Keep it under 3 sentences
-* **Eligibility Requirements:** e.g., "University students", "Global", "Underrepresented groups"
-* **Stipend / Compensation:** Specify currency if applicable, or state "Unpaid"
-* **Application Deadline:** Use standard ISO format: YYYY-MM-DD
-* **Official URL**
-
-### Local Development Workflow
-
-1. **Fork the repository:** Create your own copy of the project on GitHub.
-2. **Clone your fork locally:**
 ```bash
-git clone [https://github.com/YOUR-USERNAME/oss-programs.git](https://github.com/YOUR-USERNAME/oss-programs.git)
+# 1. Clone the repository
+git clone https://github.com/OWASP-STUDENT-CHAPTER/oss-programs.git
 cd oss-programs
 
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
+npm run dev
 ```
 
-3. **Create a feature branch:** Isolate your changes.
-```bash
-git checkout -b update/gsoc-2026-deadlines
-
-```
-
-4. **Run the development server:** Ensure you run `npm install` and then `npm run dev` to test your changes locally at `http://localhost:3000`.
+Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
 ---
 
-5. **Format and Lint:** If you are modifying TypeScript or React components, ensure your code passes the project's formatting and linting rules.
+## Contributing
+
+We rely on community contributions to keep program deadlines, stipends, and links accurate. All contributions are welcome — whether you're fixing a typo, adding a new program, or improving the UI.
+
+### Contribution Workflow
+
+```mermaid
+flowchart TD
+    A([You want to contribute]) --> B{What type?}
+
+    B --> C[Add / Update a Program]
+    B --> D[Code Improvement]
+
+    C --> E[Find the data file\nin /data or /content]
+    D --> F[Browse Issues tab\nlook for good-first-issue]
+
+    E --> G[Fork the repository]
+    F --> G
+
+    G --> H[Clone your fork locally]
+    H --> I[Create a feature branch]
+    I --> J[Make your changes]
+    J --> K{Does it pass checks?}
+
+    K -- No --> L[Run npm run lint\nand fix errors]
+    L --> J
+
+    K -- Yes --> M[Commit with a clear message]
+    M --> N[Push to your branch]
+    N --> O[Open a Pull Request\nwith source link]
+    O --> P([Merged!])
+
+    style A fill:#4ade80,color:#000
+    style P fill:#4ade80,color:#000
+    style K fill:#facc15,color:#000
+    style L fill:#f87171,color:#000
+```
+
+---
+
+### Step-by-Step Guide
+
+**1. Fork & Clone**
+
+```bash
+git clone https://github.com/YOUR-USERNAME/oss-programs.git
+cd oss-programs
+```
+
+**2. Create a Feature Branch**
+
+```bash
+git checkout -b update/gsoc-2026-deadlines
+```
+
+> Use descriptive branch names like `add/program-name` or `fix/broken-link`.
+
+**3. Run Locally**
+
+```bash
+npm install
+npm run dev
+```
+
+**4. Lint Your Code** *(for TypeScript/React changes)*
+
 ```bash
 npm run lint
-
 ```
 
-6. **Commit your changes:** Write a clear, concise commit message.
+**5. Commit & Push**
+
 ```bash
 git commit -m "Update GSoC 2026 application deadlines and stipend amounts"
-
-```
-
-7. **Push to your branch:**
-```bash
 git push origin update/gsoc-2026-deadlines
-
 ```
 
-8. **Open a Pull Request:** Navigate to the original repository and submit your PR. In the description, clearly state what program you added or what dates you updated, and include a link to the official source for verification.
+**6. Open a Pull Request**
+
+In your PR description, include:
+- What program you added or what you changed
+- A link to the official source for verification
+
+---
+
+### Adding a New Program
+
+When submitting a new program, make sure your entry includes all of the following fields:
+
+```mermaid
+classDiagram
+    class Program {
+        +String name
+        +String category
+        +String description
+        +String eligibility
+        +String stipend
+        +Date   deadline
+        +URL    officialUrl
+    }
+
+    class Category {
+        <<enumeration>>
+        Mentorship
+        Grant
+        Hackathon
+        Fellowship
+        Internship
+    }
+
+    Program --> Category : must be one of
+```
+
+| Field | Description | Example |
+|---|---|---|
+| `name` | Official program name | `"Google Summer of Code"` |
+| `category` | One of: Mentorship, Grant, Hackathon, Fellowship | `"Mentorship"` |
+| `description` | Max 3 sentences | `"GSoC is a global program..."` |
+| `eligibility` | Who can apply | `"University students, Global"` |
+| `stipend` | Compensation details | `"$1500–$6600 USD"` or `"Unpaid"` |
+| `deadline` | ISO 8601 format | `"2026-04-01"` |
+| `officialUrl` | Link to the official page | `"https://summerofcode.withgoogle.com"` |
+
+---
 
 ### Good First Issues
 
-If you want to contribute code (UI improvements, search optimizations, etc.) but don't know where to start, check the "Issues" tab on GitHub and filter by the `good first issue` or `help wanted` labels.
+New to the project? Start here:
+
+1. Go to the [Issues tab](https://github.com/OWASP-STUDENT-CHAPTER/oss-programs/issues)
+2. Filter by **`good first issue`** or **`help wanted`**
+3. Comment on the issue to claim it before starting
+
+---
+
+## Project Structure
+
+```mermaid
+graph TD
+    Root["oss-programs/"] --> App["app/"]
+    Root --> Components["components/"]
+    Root --> Data["data/"]
+    Root --> Public["public/"]
+    Root --> Lib["lib/"]
+
+    App --> Pages["Pages & Layouts\n(Next.js App Router)"]
+    Components --> UI["shadcn/ui components\n& custom UI"]
+    Data --> Programs["programs.ts / .json\n<-- Edit this to add programs"]
+    Lib --> Utils["Utility functions\nSearch logic (Fuse.js)"]
+    Public --> Assets["Static assets\nIcons & images"]
+
+    style Data fill:#fef08a,color:#000
+    style Programs fill:#fef08a,color:#000
+```
+
+> **To add or update a program**, you'll primarily be working inside the `data/` directory.
 
 ---
 
 ## License
 
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+---
 
 ## Acknowledgments
 
-Built by the OWASP Student Chapter to help students and contributors find open source opportunities.
+Built by the [OWASP Student Chapter](https://owasp.org/) to help students and developers discover open source opportunities worldwide.
 
-```
+**Want to see a program added? [Open an issue](https://github.com/OWASP-STUDENT-CHAPTER/oss-programs/issues/new)**
+
+---
+
+<div align="center">
+
+**Star this repo if it helped you find an opportunity!**
+
+</div>
